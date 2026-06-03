@@ -1,0 +1,14 @@
+[run]
+omit =
+    tests/*
+    tracker.py
+    entry_exit_detector.py
+    zone_dwell_detector.py
+    billing_area_detector.py
+    reentry_detector.py
+    dashboard.py
+    pos_enrichment.py
+    event_logger.py
+    load_events.py
+    events.py
+    anomaly.py

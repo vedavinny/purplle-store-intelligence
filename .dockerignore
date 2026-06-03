@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+.git/
+.gitignore
+.vscode/
+
+videos/
+*.mp4
+*.avi
+*.mov
+*.mkv

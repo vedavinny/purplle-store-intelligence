@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+
+  api:
+    build: .
+    container_name: purplle-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    container_name: purplle-dashboard
+    command: streamlit run dashboard.py --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:8000
+    restart: unless-stopped
