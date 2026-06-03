@@ -110,6 +110,15 @@ Run API:
 
 uvicorn main:app --reload
 
+API Documentation (Swagger):
+http://localhost:8000/docs
+
+Health Endpoint:
+http://localhost:8000/health
+
+Note:
+The root endpoint (/) is not implemented. Please use /docs to explore and test the API.
+
 Run Dashboard:
 
 streamlit run dashboard.py
